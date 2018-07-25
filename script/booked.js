@@ -36,7 +36,11 @@ $(function(){
     //选择时间
     $("#datetime-picker").datetimePicker({
         value: dateTime.split('-'),
-        inputReadOnly:false
+        inputReadOnly:false,
+        toolbarTemplate: '<header class="bar bar-nav">\
+            <button class="button button-link pull-right close-picker">完成</button>\
+            <h1 class="title">选择日期和时间</h1>\
+            </header>'
     });
 
     $.init();
