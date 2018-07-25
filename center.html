@@ -8,53 +8,55 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" type="text/css" href="./style/common.css">
+    <link rel="stylesheet" type="text/css" href="./style/common.css?v=180725">
     <link rel="stylesheet" type="text/css" href="./style/icomoon.css">
     <link rel="stylesheet" type="text/css" href="./style/lib/light7.min.css">
     <!-- 页面调用CSS -->
-    <link rel="stylesheet" type="text/css" href="./style/center.css">
+    <link rel="stylesheet" type="text/css" href="./style/center.css?v=180725">
 </head>
 <body>
     <div id="myApp">
-        <div class="header">
-            <span class="icon-head-back"><a href="#"></a></span>
-            <p class="text-head-title">个人中心</p>
-            <span class="icon-head-tool"></span>
-        </div>
-        <div class="content-box">
-            <div class="banner-box">
-                <div class="pic-box">
-                    <img :src="avatarThumbnailUrl"/>
-                </div>
-                <div class="tit-box">
-                    <p>{{nickName}}</p>
-                </div>
+        <div class="page page-current">
+            <div class="header">
+                <span class="icon-head-back"><a href="#"></a></span>
+                <p class="text-head-title">个人中心</p>
+                <span class="icon-head-tool"></span>
             </div>
-            <ul class="list-ul">
-                <li class="list-item">
-                    <label class="tit">手机</label>
-                    <a href="bindmobile.html">
-                        <div class="txt">
-                            <p v-if="phoneNumber">
-                                <span>{{phoneNumber}}</span>
-                            </p>
-                            <p v-else>
-                                <span class="txt-gray">请选择</span>
+            <div class="content-box">
+                <div class="banner-box">
+                    <div class="pic-box">
+                        <img :src="avatarThumbnailUrl"/>
+                    </div>
+                    <div class="tit-box">
+                        <p>{{nickName}}</p>
+                    </div>
+                </div>
+                <ul class="list-ul">
+                    <li class="list-item">
+                        <label class="tit">手机</label>
+                        <a href="bindmobile.html">
+                            <div class="txt">
+                                <p v-if="phoneNumber">
+                                    <span>{{phoneNumber}}</span>
+                                </p>
+                                <p v-else>
+                                    <span class="txt-gray">请选择</span>
+                                    <i class="ico-tri-right"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <label class="tit">学生资料</label>
+                        <a href="student.html">
+                            <div class="txt">
                                 <i class="ico-tri-right"></i>
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <label class="tit">学生资料</label>
-                    <a href="student.html">
-                        <div class="txt">
-                            <i class="ico-tri-right"></i>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
     </div>
     <script type="text/javascript" src="./script/lib/jquery-3.2.1.min.js"></script>
     <script>
@@ -90,7 +92,7 @@
     <script type="text/javascript" src="./script/lib/axios.min.js"></script>
     <script type="text/javascript" src="./script/lib/light7.min.js"></script>
     <script type="text/javascript" src="./script/lib/crypto-js.js"></script>
-    <script type="text/javascript" src="./script/common.js"></script>
-    <script type="text/javascript" src="./script/center.js"></script>
+    <script type="text/javascript" src="./script/common.js?v=180725"></script>
+    <script type="text/javascript" src="./script/center.js?v=180725"></script>
 </body>
 </html>

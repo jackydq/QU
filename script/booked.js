@@ -1,5 +1,5 @@
 ﻿var redirect_uri = encodeURIComponent(location.href);
-var tqDay = 2; //要求的提前预约天数
+var tqDay = 3; //要求的提前预约天数
 var wxAuthorUrl = xq.xqAPI + 'token/wx/create';
 var tokenApiUrl = xq.xqAPI + 'token/create';
 var hobbyApiUrl = xq.xqAPI + 'hobby/all/list';
@@ -30,7 +30,7 @@ $(function(){
     };
 
     var currTime = new Date();
-    //预约时间距离当前时间至少有1.5天之后
+    //预约时间距离当前时间至少有tqDay天之后
     var dateTime = new Date(currTime*1 + tqDay*24*60*60*1000).format("yyyy-MM-dd-hh-mm");
 
     //选择时间

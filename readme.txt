@@ -128,3 +128,8 @@
   2. booked 服务器上传 light7 失败
 
   3. script/booked.js  ,  style/booked.css , style/common.css  上传失败
+
+
+2018-07-25：
+ 1. 个人中心，绑定手机页面出错，无法渲染   bindmobile.html  ok
+ 2. 订单列表，样式出错                                myorder.html      ok
