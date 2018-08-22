@@ -34,17 +34,17 @@
                 <ul class="list-ul">
                     <li class="list-item">
                         <label class="tit">手机</label>
-                        <a external href="bindmobile.html">
-                            <div class="txt">
-                                <p v-if="phoneNumber">
-                                    <span>{{phoneNumber}}</span>
-                                </p>
-                                <p v-else>
+                        <div class="txt">
+                            <p v-if="phoneNumber">
+                                <span>{{phoneNumber}}</span>
+                            </p>
+                            <a v-else external href="bindmobile.html">
+                                <p>
                                     <span class="txt-gray">请选择</span>
                                     <i class="ico-tri-right"></i>
                                 </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </li>
                     <li class="list-item">
                         <label class="tit">学生资料</label>
