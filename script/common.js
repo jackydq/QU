@@ -11,7 +11,7 @@ var xq = {
     appId:'5331a43b2b91c4c0cb43f7011ccd99d68f31d516',
     app_secret:'b5805c036941cee0fef57192e7db9c13f9f84e77',
     /*接口地址*/
-    xqAPI:'http://test.api.xqudj.com/api/',
+    xqAPI:'https://api.xqudj.com/api/',
     /*URL 取参*/
     getUrlParam:function(name) {
      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
